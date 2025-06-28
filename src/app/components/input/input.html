@@ -1,0 +1,14 @@
+
+<div class="input-container">
+  @if(inputType() === "input") {
+
+      <label class="label-s">{{label()}}</label>
+      <input class="paragraph-m input-field" [type]="type()" [placeholder]="placeholder()">
+
+  } @else {
+
+      <label class="label-s">{{label()}}</label>
+      <textarea class="paragraph-m input-field" rows="1" [placeholder]="placeholder()"></textarea>
+
+  }
+</div>

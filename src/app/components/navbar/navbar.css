@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  background-color: var(--background-surface);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.right-options {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.notifications-button {
+  padding: 0.5rem;
+  line-height: 0;
+  font-size: 1.25rem;
+  border: none;
+  border-radius: 0.75rem;
+  background-color: var(--background-light);
+  color: var(--text-heading);
+  cursor: pointer;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.profile-button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  background: none;
+  border: none;
+}
+
+.profile-button img {
+  border-radius: 50%;
+}
+
+.sign-out-button {
+  background: none;
+  border: none;
+  color: var(--text-heading);
+  line-height: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+}

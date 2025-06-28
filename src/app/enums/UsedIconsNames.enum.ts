@@ -1,0 +1,16 @@
+﻿export enum UsedIconsNames {
+  CARET_DOWN = "ph ph-caret-down",
+  GEAR = "ph ph-gear-six",
+  BELL = "ph ph-bell",
+  PLUS_CIRCLE = "ph ph-plus-circle",
+  FUNNEL = "ph ph-funnel",
+  MAGNIFYING_GLASS = "ph ph-magnifying-glass",
+  CHAT_TEARDROP = "ph ph-chat-teardrop",
+  CALENDAR = "ph ph-calendar-blank",
+  PENCIL = "ph ph-pencil-simple",
+  PENCIL_FILL = "ph-fill ph-pencil",
+  X = "ph ph-x",
+  SIGN_OUT = "ph ph-sign-out",
+  SIGN_IN = "ph ph-sign-in",
+  TRASH = "ph ph-trash-simple",
+}
