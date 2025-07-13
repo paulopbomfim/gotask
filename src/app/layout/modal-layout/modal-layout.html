@@ -1,0 +1,23 @@
+<div class="modal" (click)="closeModalAction()">
+  <div class="modal-overlay">
+    <div class="modal-container" (click)="$event.stopPropagation()">
+      <header class="modal-header">
+        <div class="modal-title">
+          <i [class]="ModalIcon()"></i>
+          <strong class="heading-m">{{ModalTitle()}}</strong>
+        </div>
+
+        <button (click)="closeModalAction()" class="modal-close-button">
+          <i [class]="UsedIconsNames.X"></i>
+        </button>
+      </header>
+
+      <ng-content>
+        <main class="modal-content">
+          <router-outlet />
+        </main>
+      </ng-content>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,90 @@
+<section class="welcome-section">
+  <div class="welcome-left">
+    <div class="welcome-text">
+      <h1 class="heading-l">Bem vindo de volta, Paulo</h1>
+      <p class="paragraph-m">Não se esqueça de atualizar as tarefas</p>
+    </div>
+    <app-button
+      [routerLink]="['/task/create']"
+      variant="filled"
+      [icon]="UsedIconsNames.PLUS_CIRCLE"
+      label="Criar uma tarefa"
+    />
+  </div>
+
+  <img ngSrc="assets/hand-coding.svg" alt="Programando" width="180" height="180"/>
+</section>
+
+<section class="tasks-section" cdkDropListGroup>
+  <div
+    id="todo"
+    class="task-step"
+    cdkDropList
+    [cdkDropListData]="todoList()"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <header class="todo">
+      <strong class="label-m">A fazer</strong>
+      <span class="label-s">{{todoList().length}}</span>
+    </header>
+
+    @for(item of todoList(); track item) {
+      <app-task-card
+        [title]="item.title"
+        [description]="item.description"
+        [comments]="item.comments"
+        cdkDrag
+      />
+    }
+  </div>
+
+  <div
+    id="progress"
+    class="task-step"
+    cdkDropList
+    [cdkDropListData]="inProgressList()"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <header class="doing">
+      <strong class="label-m">Fazendo</strong>
+      <span class="label-s">{{inProgressList().length}}</span>
+    </header>
+
+    @for(item of inProgressList(); track item) {
+      <app-task-card
+        [title]="item.title"
+        [description]="item.description"
+        [comments]="item.comments"
+        cdkDrag
+      />
+    }
+  </div>
+
+  <div
+    id="done"
+    class="task-step"
+    cdkDropList
+    [cdkDropListData]="doneList()"
+    (cdkDropListDropped)="drop($event)"
+  >
+    <header class="concluded">
+      <strong class="label-m">Concluído</strong>
+      <span class="label-s">{{doneList().length}}</span>
+    </header>
+
+    @for(item of doneList(); track item) {
+      <app-task-card
+        [title]="item.title"
+        [description]="item.description"
+        [comments]="item.comments"
+        cdkDrag
+      />
+    }
+  </div>
+</section>
+
+@if(todoList().length === 0 && inProgressList().length === 0 && doneList().length === 0) {
+  <h2 class="heading-m unavailable-task">Nenhuma tarefa disponível no momento.</h2>
+}
+
+<router-outlet/>

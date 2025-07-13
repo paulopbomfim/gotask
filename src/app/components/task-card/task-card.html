@@ -1,0 +1,12 @@
+<div class="task-card">
+  <button class="delete-button"><i [class]="UsedIconsNames.TRASH"></i></button>
+
+  <div class="task-card-content">
+    <strong class="label-m card-text">{{title()}}</strong>
+    <span class="paragraph-m card-text">{{description()}}</span>
+    <div class="card-comment-counter">
+      <i [class]="UsedIconsNames.CHAT_TEARDROP"></i>
+      <span class="link">{{comments() === 1 ? `${comments()} Comentário` : `${comments()} Comentários` }}</span>
+    </div>
+  </div>
+</div>

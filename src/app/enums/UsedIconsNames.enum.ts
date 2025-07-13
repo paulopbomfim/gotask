@@ -8,7 +8,7 @@
   CHAT_TEARDROP = "ph ph-chat-teardrop",
   CALENDAR = "ph ph-calendar-blank",
   PENCIL = "ph ph-pencil-simple",
-  PENCIL_FILL = "ph-fill ph-pencil",
+  PENCIL_FILL = "ph-fill ph-pencil-simple",
   X = "ph ph-x",
   SIGN_OUT = "ph ph-sign-out",
   SIGN_IN = "ph ph-sign-in",
