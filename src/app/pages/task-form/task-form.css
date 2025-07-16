@@ -1,0 +1,22 @@
+.task-form {
+  width: 100%;
+  display: block;
+}
+
+.task-form-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  padding: 1rem;
+
+}
+
+.task-form-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  border-top: 1px solid var(--border-light);
+}

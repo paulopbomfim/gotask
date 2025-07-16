@@ -1,4 +1,6 @@
 <button [class]="variant()">
-  <i [class]="icon()"></i>
+  @if(icon().length > 0) {
+    <i [class]="icon()"></i>
+  }
   <span class="label-s">{{label()}}</span>
 </button>

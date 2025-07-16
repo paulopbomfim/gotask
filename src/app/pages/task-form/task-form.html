@@ -1,1 +1,11 @@
-<p>task-form works!</p>
+<form class="task-form">
+  <main class="task-form-main">
+    <app-input label="Nome" placeholder="Descreva o que deverá ser feito"/>
+    <app-input label="Descrição" type="textarea" placeholder="Adicione uma descrição"/>
+  </main>
+
+  <footer class="task-form-footer">
+    <app-button label="Cancelar" variant="light" [routerLink]="['/']"/>
+    <app-button label="Criar uma tarefa" type="submit" variant="filled"/>
+  </footer>
+</form>
