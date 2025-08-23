@@ -13,4 +13,5 @@
   SIGN_OUT = "ph ph-sign-out",
   SIGN_IN = "ph ph-sign-in",
   TRASH = "ph ph-trash-simple",
+  STAR = "ph-fill ph-star-four"
 }

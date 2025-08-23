@@ -1,5 +1,5 @@
 <div class="task-card">
-  <button class="delete-button"><i [class]="UsedIconsNames.TRASH"></i></button>
+  <button class="delete-button" (click)="$event.stopPropagation()"><i [class]="UsedIconsNames.TRASH"></i></button>
 
   <div class="task-card-content">
     <strong class="label-m card-text">{{title()}}</strong>

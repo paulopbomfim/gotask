@@ -64,21 +64,6 @@
   background-color: var(--border-light);
 }
 
-
-/*.fecharModal {*/
-/*  color: #aaa;*/
-/*  float: right;*/
-/*  font-size: 28px;*/
-/*  font-weight: bold;*/
-/*}*/
-
-/*.fecharModal:hover,*/
-/*.fecharModal:focus {*/
-/*  color: black;*/
-/*  text-decoration: none;*/
-/*  cursor: pointer;*/
-/*}*/
-
 .modal-overlay {
   display: block; /* Oculto por padrão */
   position: fixed;

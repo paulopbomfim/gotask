@@ -5,6 +5,7 @@ import {Login} from './pages/login/login';
 import {ModalLayout} from './layout/modal-layout/modal-layout';
 import {TaskForm} from './pages/task-form/task-form';
 import {UsedIconsNames} from './enums/UsedIconsNames.enum';
+import {TaskDetails} from './pages/task-details/task-details';
 
 export const routes: Routes = [
   {
@@ -29,12 +30,21 @@ export const routes: Routes = [
                 }
               },
               {
-                path: 'edit',
+                path: 'edit/:id',
                 component: TaskForm,
                 data: {
                   title: "Editar tarefa",
                   icon: UsedIconsNames.PENCIL_FILL,
                   type: "edit"
+                }
+              },
+              {
+                path: 'details/:id',
+                component: TaskDetails,
+                data: {
+                  title: "Comentar tarefa",
+                  icon: UsedIconsNames.STAR,
+                  type: "details"
                 }
               }
             ]

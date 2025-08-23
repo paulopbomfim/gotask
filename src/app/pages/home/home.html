@@ -30,6 +30,7 @@
 
     @for(item of todoList(); track item) {
       <app-task-card
+        [routerLink]="['/task/details', item.id]"
         [title]="item.title"
         [description]="item.description"
         [comments]="item.comments"
@@ -52,6 +53,7 @@
 
     @for(item of inProgressList(); track item) {
       <app-task-card
+        [routerLink]="['/task/details', item.id]"
         [title]="item.title"
         [description]="item.description"
         [comments]="item.comments"
@@ -74,6 +76,7 @@
 
     @for(item of doneList(); track item) {
       <app-task-card
+        [routerLink]="['/task/details', item.id]"
         [title]="item.title"
         [description]="item.description"
         [comments]="item.comments"
